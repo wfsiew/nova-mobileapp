@@ -90,6 +90,56 @@
       </div>
 
       <div class="py-3"></div>
+      <h3 class="fs-2">Vesalius Patient X Nova</h3>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div id="qr11" class="object-fit-cover rounded" style="width: 225;height: 225px;"></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="bi bi-android"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div id="qr12" class="object-fit-cover rounded" style="width: 225;height: 225px;"></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="bi bi-apple"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-3"></div>
+      <h3 class="fs-2">Vesalius Doctor X Nova</h3>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div id="qr13" class="object-fit-cover rounded" style="width: 225;height: 225px;"></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="bi bi-android"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div id="qr14" class="object-fit-cover rounded" style="width: 225;height: 225px;"></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="bi bi-apple"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-3"></div>
       <h3 class="fs-2">SkAi Lite UAT</h3>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
@@ -182,6 +232,22 @@
     width : 225,
     height : 225
   });
+  var qrcode7a = new QRCode(document.getElementById("qr11"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode7b = new QRCode(document.getElementById("qr12"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode8a = new QRCode(document.getElementById("qr13"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode8b = new QRCode(document.getElementById("qr14"), {
+    width : 225,
+    height : 225
+  });
   qrcode1a.makeCode('https://drive.google.com/file/d/1krqcyM31jvBZImCEfWYneCPAb6rVfkgb/view?usp=sharing');
   qrcode2b.makeCode('https://testflight.apple.com/join/0WgSF7EN');
   qrcode3a.makeCode('https://drive.google.com/file/d/1I3SbvyooHCIIlFnuH1wYDHLCONC4o_2P/view?usp=share_link');
@@ -192,6 +258,10 @@
   qrcode5b.makeCode('https://testflight.apple.com/join/Z51JPUlX');
   qrcode6a.makeCode('https://drive.google.com/file/d/1m1Za2fthe-ZCIrkAn16O-r0fRb-3aodZ/view?usp=share_link');
   qrcode6b.makeCode('https://testflight.apple.com/join/m6fcvVfH');
+  qrcode7a.makeCode('https://drive.google.com/file/d/1LMQ51vOYTHpqXimFX6YY9-C9JTFewLki/view?usp=share_link');
+  qrcode7b.makeCode('https://testflight.apple.com/join/zFYiuV5y');
+  qrcode8a.makeCode('https://drive.google.com/file/d/1cK-nJfmqtnS_NTF3mk3jFgApreKr0wUU/view?usp=share_link');
+  qrcode8b.makeCode('https://testflight.apple.com/join/ZM2vemcT');
 </script>
 
 </html>
