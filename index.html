@@ -90,6 +90,31 @@
       </div>
 
       <div class="py-3"></div>
+      <h3 class="fs-2">Vesalius Patient IH UAT</h3>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div id="qr17" class="object-fit-cover rounded" style="width: 225;height: 225px;"></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="bi bi-android"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div id="qr18" class="object-fit-cover rounded" style="width: 225;height: 225px;"></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="bi bi-apple"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-3"></div>
       <h3 class="fs-2">Vesalius Doctor Nova</h3>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
@@ -281,6 +306,14 @@
     width : 225,
     height : 225
   });
+  var qrcode10a = new QRCode(document.getElementById("qr17"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode10b = new QRCode(document.getElementById("qr18"), {
+    width : 225,
+    height : 225
+  });
   qrcode1a.makeCode('https://app.box.com/s/zi7ir5h5qm3fxk6nak7sfmx67ov9w9xc');
   qrcode2b.makeCode('https://testflight.apple.com/join/0WgSF7EN');
   qrcode3a.makeCode('https://app.box.com/s/ia94nmco2yhaln6ew2gelyhynamsce3g');
@@ -297,6 +330,8 @@
   qrcode8b.makeCode('https://testflight.apple.com/join/ZM2vemcT');
   qrcode9a.makeCode('https://app.box.com/s/npq5b4xj0ksevylunrxiztml6g5cpthk');
   qrcode9b.makeCode('https://testflight.apple.com/join/PKfbGUal');
+  qrcode10a.makeCode('https://app.box.com/s/p36gp393q4wqpccjyqiofpm0n10ghcj0');
+  qrcode10b.makeCode('https://app.box.com/s/p36gp393q4wqpccjyqiofpm0n10ghcj0');
 </script>
 
 </html>
