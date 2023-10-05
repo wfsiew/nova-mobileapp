@@ -238,6 +238,31 @@
           </div>
         </div>
       </div>
+
+      <div class="py-3"></div>
+      <h3 class="fs-2">SkAi CT Pro UAT</h3>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div id="qr19" class="object-fit-cover rounded" style="width: 225;height: 225px;"></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="bi bi-android"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div id="qr20" class="object-fit-cover rounded" style="width: 225;height: 225px;"></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="bi bi-apple"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
@@ -314,6 +339,14 @@
     width : 225,
     height : 225
   });
+  var qrcode11a = new QRCode(document.getElementById("qr19"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode11b = new QRCode(document.getElementById("qr20"), {
+    width : 225,
+    height : 225
+  });
   qrcode1a.makeCode('https://app.box.com/s/zi7ir5h5qm3fxk6nak7sfmx67ov9w9xc');
   qrcode2b.makeCode('https://testflight.apple.com/join/0WgSF7EN');
   qrcode3a.makeCode('https://app.box.com/s/ia94nmco2yhaln6ew2gelyhynamsce3g');
@@ -332,6 +365,8 @@
   qrcode9b.makeCode('https://testflight.apple.com/join/PKfbGUal');
   qrcode10a.makeCode('https://app.box.com/s/h2ur4csfyjgn0djwgavr93j9lipajihz');
   qrcode10b.makeCode('https://testflight.apple.com/join/yTzICG9R');
+  qrcode11a.makeCode('https://testflight.apple.com/join/345Gey6K');
+  qrcode11b.makeCode('https://testflight.apple.com/join/345Gey6K');
 </script>
 
 </html>
