@@ -75,7 +75,7 @@
               <div class="card-body">
                 <div id="qr15" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
                 <div class="col-12 d-flex align-items-center justify-content-center pt-2">
-                  <i class="bi bi-android h1"></i>
+                  <i class="bi bi-android h1"></i>&nbsp;<span id="vdevih" class="h5"></span>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@
               <div class="card-body">
                 <div id="qr17" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
                 <div class="col-12 d-flex align-items-center justify-content-center pt-2">
-                  <i class="bi bi-android h1"></i>
+                  <i class="bi bi-android h1"></i>&nbsp;<span id="vuatih" class="h5"></span>
                 </div>
               </div>
             </div>
@@ -304,6 +304,16 @@
   </div>
 </body>
 <script type="text/javascript">
+  async function load() {
+    var rdev = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/ihp/ver');
+    var ruat = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/uat/ihp/ver');
+    var vdev = await rdev.text();
+    var vuat = await ruat.text();
+    document.getElementById('vdevih').innerHTML = vdev;
+    document.getElementById('vuatih').innerHTML = vuat;
+  }
+
+  load();
   var qrcode1a = new QRCode(document.getElementById("qr1"), {
     width : 225,
     height : 225
