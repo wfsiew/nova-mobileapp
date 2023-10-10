@@ -276,14 +276,14 @@
       </div>
 
       <div class="row pt-4">
-        <div class="col-12 h3">SkAi CT Pro UAT</div>
+        <div class="col-12 h3">SkAi Pro CT UAT</div>
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
             <div class="card shadow-sm p-2">
               <div class="card-body">
                 <div id="qr19" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
                 <div class="col-12 d-flex align-items-center justify-content-center pt-2">
-                  <i class="bi bi-android h1"></i>
+                  <i class="bi bi-android h1"></i>&nbsp;<span id="vskaiproct" class="h5"></span>
                 </div>
               </div>
             </div>
@@ -308,15 +308,18 @@
     var rdevih = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/ihp/ver');
     var ruatih = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/uat/ihp/ver');
     var rskailite = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/skai-lite/ver');
-    var rskaict = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/skai-ct/ver')
+    var rskaict = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/skai-ct/ver');
+    var rskaiproct = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/skai-pro-ct/ver');
     var vdevih = await rdevih.text();
     var vuatih = await ruatih.text();
     var vskailite = await rskailite.text();
     var vskaict = await rskaict.text();
+    var vskaiproct = await rskaiproct.text();
     document.getElementById('vdevih').innerHTML = vdevih;
     document.getElementById('vuatih').innerHTML = vuatih;
     document.getElementById('vskailite').innerHTML = vskailite;
     document.getElementById('vskaict').innerHTML = vskaict;
+    document.getElementById('vskaiproct').innerHTML = vskaiproct;
   }
 
   load();
