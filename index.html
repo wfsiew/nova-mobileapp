@@ -1,15 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <title>Nova Apps</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/qrcode.min.js"></script>
+  <title>My Nova Apps</title>
+</head>
+
+<body>
+  <div class="album py-2 bg-light">
+    <div class="container py-2">
+      <div class="row">
+        <div class="col-12 h3">CVSKLgo UAT</div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div class="card shadow-sm p-2">
+            <div class="card-body">
+              <div id="qr1" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+              <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                <i class="bi bi-android h1"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div class="card shadow-sm p-2">
+            <div class="card-body">
+              <div id="qr2" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+              <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                <i class="bi bi-apple h1"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4">
+        <div class="col-12 h3">Vesalius Patient Nova</div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr7" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-android h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr8" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-apple h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4">
+        <div class="col-12 h3">Vesalius Patient IH</div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr15" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-android h1"></i>&nbsp;<span id="vdevih" class="h5"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr16" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-apple h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4">
+        <div class="col-12 h3">Vesalius Patient IH UAT</div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr17" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-android h1"></i>&nbsp;<span id="vuatih" class="h5"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr18" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-apple h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4 d-none">
+        <div class="col-12 h3">Vesalius Doctor Nova</div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr9" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-android h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr10" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-apple h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4 d-none">
+        <div class="col-12 h3">Vesalius Patient X Nova</div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr11" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-android h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr12" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-apple h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4 d-none">
+        <div class="col-12 h3">Vesalius Doctor X Nova</div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr13" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-android h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr14" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-apple h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4">
+        <div class="col-12 h3">SkAi Lite UAT</div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr3" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-android h1"></i>&nbsp;<span id="vskailite" class="h5"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr4" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-apple h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4">
+        <div class="col-12 h3">SkAi CT UAT</div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr5" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-android h1"></i>&nbsp;<span id="vskaict" class="h5"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr6" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-apple h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4">
+        <div class="col-12 h3">SkAi Pro UAT</div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr21" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-android h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr22" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-apple h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4">
+        <div class="col-12 h3">SkAi Pro CT UAT</div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr19" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-android h1"></i>&nbsp;<span id="vskaiproct" class="h5"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="card shadow-sm p-2">
+              <div class="card-body">
+                <div id="qr20" class="d-flex align-items-center justify-content-center rounded text-center col-12"></div>
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                  <i class="bi bi-apple h1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  async function load() {
+    var rdevih = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/ihp/ver');
+    var ruatih = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/uat/ihp/ver');
+    var rskailite = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/skai-lite/ver');
+    var rskaict = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/skai-ct/ver');
+    var rskaiproct = await fetch('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/skai-pro-ct/ver');
+    var vdevih = await rdevih.text();
+    var vuatih = await ruatih.text();
+    var vskailite = await rskailite.text();
+    var vskaict = await rskaict.text();
+    var vskaiproct = await rskaiproct.text();
+    document.getElementById('vdevih').innerHTML = vdevih;
+    document.getElementById('vuatih').innerHTML = vuatih;
+    document.getElementById('vskailite').innerHTML = vskailite;
+    document.getElementById('vskaict').innerHTML = vskaict;
+    document.getElementById('vskaiproct').innerHTML = vskaiproct;
+  }
+
+  load();
+  var qrcode1a = new QRCode(document.getElementById("qr1"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode2b = new QRCode(document.getElementById("qr2"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode3a = new QRCode(document.getElementById("qr3"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode3b = new QRCode(document.getElementById("qr4"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode4a = new QRCode(document.getElementById("qr5"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode4b = new QRCode(document.getElementById("qr6"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode5a = new QRCode(document.getElementById("qr7"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode5b = new QRCode(document.getElementById("qr8"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode6a = new QRCode(document.getElementById("qr9"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode6b = new QRCode(document.getElementById("qr10"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode7a = new QRCode(document.getElementById("qr11"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode7b = new QRCode(document.getElementById("qr12"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode8a = new QRCode(document.getElementById("qr13"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode8b = new QRCode(document.getElementById("qr14"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode9a = new QRCode(document.getElementById("qr15"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode9b = new QRCode(document.getElementById("qr16"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode10a = new QRCode(document.getElementById("qr17"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode10b = new QRCode(document.getElementById("qr18"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode11a = new QRCode(document.getElementById("qr19"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode11b = new QRCode(document.getElementById("qr20"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode12a = new QRCode(document.getElementById("qr21"), {
+    width : 225,
+    height : 225
+  });
+  var qrcode12b = new QRCode(document.getElementById("qr22"), {
+    width : 225,
+    height : 225
+  });
+  qrcode1a.makeCode('https://app.box.com/s/zi7ir5h5qm3fxk6nak7sfmx67ov9w9xc');
+  qrcode2b.makeCode('https://testflight.apple.com/join/0WgSF7EN');
+  qrcode3a.makeCode('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/skai-lite');
+  qrcode3b.makeCode('https://testflight.apple.com/join/0PsM6mCs');
+  qrcode4a.makeCode('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/skai-ct');
+  qrcode4b.makeCode('https://testflight.apple.com/join/6Xv7RLjl');
+  qrcode5a.makeCode('https://app.box.com/s/6avwv24c120wqgyfdcmfudsr56ledb77');
+  qrcode5b.makeCode('https://testflight.apple.com/join/Z51JPUlX');
+  qrcode6a.makeCode('https://app.box.com/s/1hnbkb6f0un36p8xw27octq7n3mjoz4s');
+  qrcode6b.makeCode('https://testflight.apple.com/join/m6fcvVfH');
+  qrcode7a.makeCode('https://app.box.com/s/o2nzjhq0nu5t1ahscr5u8kcumpagu9n0');
+  qrcode7b.makeCode('https://testflight.apple.com/join/zFYiuV5y');
+  qrcode8a.makeCode('https://app.box.com/s/om4gg8rk22poml2psh69d1lo7682lq3s');
+  qrcode8b.makeCode('https://testflight.apple.com/join/ZM2vemcT');
+  qrcode9a.makeCode('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/ihp');
+  qrcode9b.makeCode('https://testflight.apple.com/join/PKfbGUal');
+  qrcode10a.makeCode('https://202.73.42.183:43901/mobile_central_2_0_0/files/uat/ihp');
+  qrcode10b.makeCode('https://testflight.apple.com/join/yTzICG9R');
+  qrcode11a.makeCode('https://202.73.42.183:43901/mobile_central_2_0_0/files/dev/skai-pro-ct');
+  qrcode11b.makeCode('https://testflight.apple.com/join/345Gey6K');
+  qrcode12a.makeCode('https://testflight.apple.com/join/yOud71n7');
+  qrcode12b.makeCode('https://testflight.apple.com/join/yOud71n7');
+</script>
+
 </html>
